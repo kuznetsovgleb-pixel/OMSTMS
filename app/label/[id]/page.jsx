@@ -1,0 +1,3 @@
+'use client';
+import React from 'react';
+export default function Label({params}){const id=params.id;const dt=new Date().toLocaleString();return(<div className='p-6' style={{width:'420px'}}><div className='border-2 border-black p-3'><div className='text-2xl font-bold'>SHIP LABEL</div><div className='text-sm text-gray-600'>Demo — печать Ctrl+P</div><div className='mt-3 text-lg font-semibold'>Order: {id}</div><div className='text-sm'>Generated: {dt}</div><div className='mt-4 border border-dashed p-3 text-center'><div className='text-sm text-gray-500'>QR/Barcode (demo)</div><div className='text-xl font-mono'>{id.replace(/[^A-Z0-9-]/g,'')}</div></div><div className='mt-4 text-sm'>From: ALA-DC1</div><div className='text-sm'>To: Receiver</div></div></div>)}
